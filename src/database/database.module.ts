@@ -12,7 +12,6 @@ import { ConfigModule } from '@nestjs/config';
     }),
 
     MongooseModule.forRoot(process.env.MONGO_URI),
-    MongooseModule.forFeature([{ name: Item.name, schema: ItemSchema }]),
   ],
 })
 export class DatabaseModule {}
